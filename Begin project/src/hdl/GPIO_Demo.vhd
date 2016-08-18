@@ -56,7 +56,6 @@ entity GPIO_demo is
            LED 			: out  STD_LOGIC_VECTOR (15 downto 0);
            SSEG_CA 		: out  STD_LOGIC_VECTOR (7 downto 0);
            SSEG_AN 		: out  STD_LOGIC_VECTOR (3 downto 0);
-           UART_TXD 	: out  STD_LOGIC;
            VGA_RED      : out  STD_LOGIC_VECTOR (3 downto 0);
            VGA_BLUE     : out  STD_LOGIC_VECTOR (3 downto 0);
            VGA_GREEN    : out  STD_LOGIC_VECTOR (3 downto 0);
@@ -69,15 +68,7 @@ end GPIO_demo;
 
 architecture Behavioral of GPIO_demo is
 
-component UART_TX_CTRL
-Port(
-	SEND : in std_logic;
-	DATA : in std_logic_vector(7 downto 0);
-	CLK : in std_logic;          
-	READY : out std_logic;
-	UART_TX : out std_logic
-	);
-end component;
+
 
 component debouncer
 Generic(
@@ -103,103 +94,16 @@ component vga_ctrl
 end component;
 
 
---The type definition for the UART state machine type. Here is a description of what
---occurs during each state:
--- RST_REG     -- Do Nothing. This state is entered after configuration or a user reset.
---                The state is set to LD_INIT_STR.
--- LD_INIT_STR -- The Welcome String is loaded into the sendStr variable and the strIndex
---                variable is set to zero. The welcome string length is stored in the StrEnd
---                variable. The state is set to SEND_CHAR.
--- SEND_CHAR   -- uartSend is set high for a single clock cycle, signaling the character
---                data at sendStr(strIndex) to be registered by the UART_TX_CTRL at the next
---                cycle. Also, strIndex is incremented (behaves as if it were post 
---                incremented after reading the sendStr data). The state is set to RDY_LOW.
--- RDY_LOW     -- Do nothing. Wait for the READY signal from the UART_TX_CTRL to go low, 
---                indicating a send operation has begun. State is set to WAIT_RDY.
--- WAIT_RDY    -- Do nothing. Wait for the READY signal from the UART_TX_CTRL to go high, 
---                indicating a send operation has finished. If READY is high and strEnd = 
---                StrIndex then state is set to WAIT_BTN, else if READY is high and strEnd /=
---                StrIndex then state is set to SEND_CHAR.
--- WAIT_BTN    -- Do nothing. Wait for a button press on BTNU, BTNL, BTND, or BTNR. If a 
---                button press is detected, set the state to LD_BTN_STR.
--- LD_BTN_STR  -- The Button String is loaded into the sendStr variable and the strIndex
---                variable is set to zero. The button string length is stored in the StrEnd
---                variable. The state is set to SEND_CHAR.
-type UART_STATE_TYPE is (RST_REG, LD_INIT_STR, SEND_CHAR, RDY_LOW, WAIT_RDY, WAIT_BTN, LD_BTN_STR);
 
---The CHAR_ARRAY type is a variable length array of 8 bit std_logic_vectors. 
---Each std_logic_vector contains an ASCII value and represents a character in
---a string. The character at index 0 is meant to represent the first
---character of the string, the character at index 1 is meant to represent the
---second character of the string, and so on.
-type CHAR_ARRAY is array (integer range<>) of std_logic_vector(7 downto 0);
 
-constant TMR_CNTR_MAX : std_logic_vector(26 downto 0) := "101111101011110000100000000"; --100,000,000 = clk cycles per second
-constant TMR_VAL_MAX : std_logic_vector(3 downto 0) := "1001"; --9
 
-constant RESET_CNTR_MAX : std_logic_vector(17 downto 0) := "110000110101000000";-- 100,000,000 * 0.002 = 200,000 = clk cycles per 2 ms
+--constant TMR_CNTR_MAX : std_logic_vector(26 downto 0) := "101111101011110000100000000"; --100,000,000 = clk cycles per second
+--constant TMR_VAL_MAX : std_logic_vector(3 downto 0) := "1001"; --9
 
-constant MAX_STR_LEN : integer := 27;
+--constant RESET_CNTR_MAX : std_logic_vector(17 downto 0) := "110000110101000000";-- 100,000,000 * 0.002 = 200,000 = clk cycles per 2 ms
 
-constant WELCOME_STR_LEN : natural := 27;
-constant BTN_STR_LEN : natural := 24;
 
---Welcome string definition. Note that the values stored at each index
---are the ASCII values of the indicated character.
-constant WELCOME_STR : CHAR_ARRAY(0 to 26) := (X"0A",  --\n
-															  X"0D",  --\r
-															  X"42",  --B
-															  X"41",  --A
-															  X"53",  --S
-															  X"59",  --Y
-															  X"53",  --S
-															  X"33",  --3
-															  X"20",  -- 
-															  X"47",  --G
-															  X"50",  --P
-															  X"49",  --I
-															  X"4F",  --O
-															  X"2F",  --/
-															  X"55",  --U
-															  X"41",  --A
-															  X"52",  --R
-															  X"54",  --T
-															  X"20",  -- 
-															  X"44",  --D
-															  X"45",  --E
-															  X"4D",  --M
-															  X"4F",  --O
-															  X"21",  --!
-															  X"0A",  --\n
-															  X"0A",  --\n
-															  X"0D"); --\r
-															  
---Button press string definition.
-constant BTN_STR : CHAR_ARRAY(0 to 23) :=     (X"42",  --B
-															  X"75",  --u
-															  X"74",  --t
-															  X"74",  --t
-															  X"6F",  --o
-															  X"6E",  --n
-															  X"20",  -- 
-															  X"70",  --p
-															  X"72",  --r
-															  X"65",  --e
-															  X"73",  --s
-															  X"73",  --s
-															  X"20",  --
-															  X"64",  --d
-															  X"65",  --e
-															  X"74",  --t
-															  X"65",  --e
-															  X"63",  --c
-															  X"74",  --t
-															  X"65",  --e
-															  X"64",  --d
-															  X"21",  --!
-															  X"0A",  --\n
-															  X"0D"); --\r
-
+-
 --This is used to determine when the 7-segment display should be
 --incremented
 signal tmrCntr : std_logic_vector(26 downto 0) := (others => '0');

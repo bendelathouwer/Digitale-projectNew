@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Aug 18 12:57:17 2016">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="e11b929b18134f8c89fd15d8388dff14" type="ProjectID"/>
+<property name="ProjectIteration" value="54" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AutoConnectTarget" value="15" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="16" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="17" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="13" type="JavaHandler"/>
+<property name="ProgramDevice" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
+<property name="RefreshDevice" value="8" type="JavaHandler"/>
+<property name="RefreshTarget" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="23" type="JavaHandler"/>
+<property name="RunImplementation" value="32" type="JavaHandler"/>
+<property name="RunSynthesis" value="10" type="JavaHandler"/>
+<property name="SaveAllFiles" value="1" type="JavaHandler"/>
+<property name="SaveProjectAs" value="1" type="JavaHandler"/>
+<property name="ShowView" value="7" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
+<property name="ui.views.b.aG" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="GPIO_Demo.vhd, 145, 470" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 231, 538" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 430, 380" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 500, 244" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 550, 289" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 75, 263" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 76, 287" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 76, 300" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 78, 300" value="1" type="GuiResourceData"/>
+<property name="GPIO_Demo.vhd, 79, 291" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SAVE_PROJECT_AS, Save Project As..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, GPIO_demo - Behavioral (GPIO_Demo.vhd" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EDIT, Edit" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SaveProjectUtils_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.ConfirmSaveTextEditsDialog_YES, Yes" value="2" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_SAVE_ALL_FILES, Save All Files..." value="1" type="GuiResourceData"/>
+<property name="vga_ctrl.vhd, 121, 352" value="1" type="GuiResourceData"/>
+<property name="vga_ctrl.vhd, 221, 302" value="1" type="GuiResourceData"/>
+<property name="vga_ctrl.vhd, 310, 366" value="1" type="GuiResourceData"/>
+<property name="vga_ctrl.vhd, 317, 351" value="1" type="GuiResourceData"/>
+<property name="vga_ctrl.vhd, 427, 327" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="4" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="3" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
