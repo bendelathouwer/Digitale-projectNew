@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Thu Aug 18 15:42:53 2016
+| Date         : Thu Aug 18 16:19:07 2016
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_utilization -file GPIO_demo_utilization_synth.rpt -pb GPIO_demo_utilization_synth.pb
 | Design       : GPIO_demo
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  460 |     0 |     20800 |  2.21 |
-|   LUT as Logic          |  460 |     0 |     20800 |  2.21 |
+| Slice LUTs*             |  453 |     0 |     20800 |  2.18 |
+|   LUT as Logic          |  453 |     0 |     20800 |  2.18 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |  348 |     0 |     41600 |  0.84 |
 |   Register as Flip Flop |  348 |     0 |     41600 |  0.84 |
@@ -150,13 +150,13 @@ Table of Contents
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
 | FDRE       |  348 |        Flop & Latch |
-| LUT2       |  164 |                 LUT |
-| LUT6       |  107 |                 LUT |
-| LUT4       |  103 |                 LUT |
-| LUT3       |   88 |                 LUT |
-| LUT5       |   82 |                 LUT |
+| LUT2       |  168 |                 LUT |
+| LUT4       |  104 |                 LUT |
+| LUT6       |  100 |                 LUT |
+| LUT3       |   87 |                 LUT |
+| LUT5       |   81 |                 LUT |
 | CARRY4     |   76 |          CarryLogic |
-| LUT1       |   28 |                 LUT |
+| LUT1       |   24 |                 LUT |
 | OBUF       |   14 |                  IO |
 | IBUF       |    7 |                  IO |
 | MUXF7      |    6 |               MuxFx |

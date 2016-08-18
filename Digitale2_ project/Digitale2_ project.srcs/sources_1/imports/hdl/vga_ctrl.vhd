@@ -324,7 +324,7 @@ begin
          end if;
          
      end process;
-     
+     --red collorbar animation
      process(pxl_clk) 
      begin
         if (rising_edge(pxl_clk)) then        
@@ -336,37 +336,45 @@ begin
                   end if;
                   end if;
        end process;  
+ -- green collorbar animation
        
-      process(pxl_clk) 
-       begin
-          if (rising_edge(pxl_clk)) then        
-            if (Button(2)= '1') then 
-                bg_green <= conv_std_logic_vector((  8 - cntDyn/2**20),8)(7 downto 4);
-                else
-                bg_green <= conv_std_logic_vector(      -inthcnt - cntDyn/2**20, 8)(7 downto 4);
-             
-            end if;
-          end if;
-         end process;              
+  process(pxl_clk) 
+   begin
+      if (rising_edge(pxl_clk)) then        
+        if (Button(2)= '1') then 
+            bg_green <= conv_std_logic_vector((  8 - cntDyn/2**20),8)(7 downto 4);
+            else
+            bg_green <= conv_std_logic_vector(      -inthcnt - cntDyn/2**20, 8)(7 downto 4);
          
-         process(pxl_clk) 
-                begin
-                   if (rising_edge(pxl_clk)) then        
-                     if (Button(3)= '1') then 
-                         bg_blue  <= conv_std_logic_vector((           -20 - cntDyn/2**20),8)(7 downto 4);
-                         else
-                          bg_blue  <= conv_std_logic_vector((           -intvcnt - cntDyn/2**20),8)(7 downto 4);
-                      
-                     end if;
-                   end if;
-                  end process;              
+        end if;
+      end if;
+     end process;              
+   
+    -- blue collorbar animation 
+     process(pxl_clk) 
+            begin
+               if (rising_edge(pxl_clk)) then        
+                 if (Button(3)= '1') then 
+                     bg_blue  <= conv_std_logic_vector((           -20 - cntDyn/2**20),8)(7 downto 4);
+                     else
+                      bg_blue  <= conv_std_logic_vector((           -intvcnt - cntDyn/2**20),8)(7 downto 4);
+                  
+                 end if;
+               end if;
+              end process;          
+              
+                  
+        
+
+       
+                               
      intHcnt <= conv_integer(h_cntr_reg);
      intVcnt <= conv_integer(v_cntr_reg);
      -- black and white background 
    
      
     
-     bg_green <= conv_std_logic_vector((-intvcnt - 8 - 8/2**20),8)(7 downto 4);
+    -- bg_green <= conv_std_logic_vector((-intvcnt - 8 - 8/2**20),8)(7 downto 4);
      --bg_red   <= conv_std_logic_vector((-intvcnt - inthcnt - cntDyn/2**20),8)(7 downto 4);
      --bg_green <= conv_std_logic_vector(            inthcnt - cntDyn/2**20, 8)(7 downto 4);
      --bg_blue  <= conv_std_logic_vector((           intvcnt - cntDyn/2**20),8)(7 downto 4);
