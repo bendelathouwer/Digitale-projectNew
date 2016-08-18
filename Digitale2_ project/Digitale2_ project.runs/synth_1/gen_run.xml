@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1471517495">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1471527739">
   <File Type="RDS-PROPCONSTRS" Name="GPIO_demo_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
   <File Type="RDS-RDS" Name="GPIO_demo.vds"/>
@@ -34,14 +34,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/hdl/clk_wiz_0.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Begin project/src/hdl/clk_wiz_0.vhd"/>
-        <Attr Name="ImportTime" Val="1470142040"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/hdl/MouseCtl.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Begin project/src/hdl/MouseCtl.vhd"/>
@@ -50,9 +42,9 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/hdl/debouncer.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/hdl/clk_wiz_0.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Begin project/src/hdl/debouncer.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Begin project/src/hdl/clk_wiz_0.vhd"/>
         <Attr Name="ImportTime" Val="1470142040"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -62,6 +54,14 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Begin project/src/hdl/vga_ctrl.vhd"/>
         <Attr Name="ImportTime" Val="1471513936"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/debouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Begin project/src/hdl/debouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1470142040"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

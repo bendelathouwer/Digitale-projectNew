@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1720 
+INFO: Helper process launched with PID 12648 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 283.078 ; gain = 76.328
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 283.234 ; gain = 76.117
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'GPIO_demo' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'GPIO_demo' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:65]
 	Parameter DEBNC_CLOCKS bound to: 65536 - type: integer 
 	Parameter PORT_WIDTH bound to: 5 - type: integer 
 INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/debouncer.vhd:42' bound to instance 'Inst_btn_debounce' of component 'debouncer' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:145]
@@ -27,9 +27,9 @@ INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/Ecto1/Documents/Gi
 	Parameter DEBNC_CLOCKS bound to: 65536 - type: integer 
 	Parameter PORT_WIDTH bound to: 5 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/debouncer.vhd:50]
-INFO: [Synth 8-3491] module 'vga_ctrl' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:38' bound to instance 'Inst_vga_ctrl' of component 'vga_ctrl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:183]
-INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:50]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:74' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:197]
+INFO: [Synth 8-3491] module 'vga_ctrl' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:38' bound to instance 'Inst_vga_ctrl' of component 'vga_ctrl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:51]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:74' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:198]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:83]
 INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:74' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0.vhd:98]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd:83]
@@ -89,7 +89,7 @@ INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (3#1) [C:/Users/Ecto1/D
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 108000000 - type: integer 
 	Parameter CHECK_PERIOD_MS bound to: 500 - type: integer 
 	Parameter TIMEOUT_PERIOD_MS bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'MouseCtl' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseCtl.vhd:179' bound to instance 'Inst_MouseCtl' of component 'MouseCtl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:207]
+INFO: [Synth 8-3491] module 'MouseCtl' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseCtl.vhd:179' bound to instance 'Inst_MouseCtl' of component 'MouseCtl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:208]
 INFO: [Synth 8-638] synthesizing module 'MouseCtl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseCtl.vhd:208]
 	Parameter SYSCLK_FREQUENCY_HZ bound to: 108000000 - type: integer 
 	Parameter CHECK_PERIOD_MS bound to: 500 - type: integer 
@@ -98,48 +98,15 @@ INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'C:/Users/Ecto1/Documents
 INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/Ps2Interface.vhd:180]
 INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (4#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/Ps2Interface.vhd:180]
 INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (5#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseCtl.vhd:208]
-INFO: [Synth 8-3491] module 'MouseDisplay' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseDisplay.vhd:99' bound to instance 'Inst_MouseDisplay' of component 'MouseDisplay' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:336]
+INFO: [Synth 8-3491] module 'MouseDisplay' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseDisplay.vhd:99' bound to instance 'Inst_MouseDisplay' of component 'MouseDisplay' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:380]
 INFO: [Synth 8-638] synthesizing module 'MouseDisplay' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseDisplay.vhd:129]
 WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseDisplay.vhd:197]
 INFO: [Synth 8-256] done synthesizing module 'MouseDisplay' (6#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseDisplay.vhd:129]
-WARNING: [Synth 8-3848] Net bg_blue in module/entity vga_ctrl does not have driver. [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:186]
-INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (7#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:50]
-WARNING: [Synth 8-3848] Net LED in module/entity GPIO_demo does not have driver. [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:56]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_demo' (8#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:67]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[15]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[14]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[13]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[12]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[11]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[10]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[9]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[8]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[7]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[6]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[5]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[4]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[3]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[2]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[1]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[0]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[15]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[14]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[13]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[12]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[11]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[10]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[9]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[8]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[7]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[6]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[5]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[4]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[3]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[2]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[1]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[0]
+INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (7#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_demo' (8#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd:65]
+WARNING: [Synth 8-3331] design vga_ctrl has unconnected port Button[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 322.086 ; gain = 115.336
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 322.266 ; gain = 115.148
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -149,7 +116,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 322.086 ; gain = 115.336
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 322.266 ; gain = 115.148
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -168,22 +135,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 614.730 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 614.965 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
 INFO: [Synth 8-5546] ROM "reset_bit_count" won't be mapped to RAM because it is too sparse
@@ -324,7 +291,7 @@ reset_enable_reporting_wait_ack |                           011100 |            
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MouseCtl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -342,7 +309,9 @@ Detailed RTL Component Info :
 	   3 Input     13 Bit       Adders := 2     
 	   2 Input     12 Bit       Adders := 7     
 	   2 Input     11 Bit       Adders := 1     
-	   2 Input      8 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 5     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 2     
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 3     
 	   3 Input      4 Bit       Adders := 2     
@@ -356,7 +325,7 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 4     
 	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 14    
+	                4 Bit    Registers := 17    
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 40    
 +---Muxes : 
@@ -366,10 +335,11 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 2     
 	  37 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
 	 107 Input      6 Bit        Muxes := 1     
 	  36 Input      5 Bit        Muxes := 1     
 	  37 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 6     
 	   2 Input      1 Bit        Muxes := 19    
 	  17 Input      1 Bit        Muxes := 6     
 	  37 Input      1 Bit        Muxes := 22    
@@ -442,13 +412,16 @@ Detailed RTL Component Info :
 Module vga_ctrl 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      8 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 2     
 +---Registers : 
 	               12 Bit    Registers := 4     
-	                4 Bit    Registers := 9     
+	                4 Bit    Registers := 12    
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -461,50 +434,18 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 614.730 ; gain = 407.980
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'Inst_vga_ctrl/mouse_cursor_blue_dly_reg[3:0]' into 'Inst_vga_ctrl/mouse_cursor_red_dly_reg[3:0]' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:364]
-INFO: [Synth 8-4471] merging register 'Inst_vga_ctrl/mouse_cursor_green_dly_reg[3:0]' into 'Inst_vga_ctrl/mouse_cursor_red_dly_reg[3:0]' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:365]
+INFO: [Synth 8-4471] merging register 'Inst_vga_ctrl/mouse_cursor_blue_dly_reg[3:0]' into 'Inst_vga_ctrl/mouse_cursor_red_dly_reg[3:0]' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:408]
+INFO: [Synth 8-4471] merging register 'Inst_vga_ctrl/mouse_cursor_green_dly_reg[3:0]' into 'Inst_vga_ctrl/mouse_cursor_red_dly_reg[3:0]' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:409]
 INFO: [Synth 8-5545] ROM "Inst_vga_ctrl/Inst_MouseCtl/periodic_check_tick" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "Inst_vga_ctrl/Inst_MouseCtl/timeout" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[15]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[14]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[13]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[12]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[11]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[10]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[9]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[8]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[7]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[6]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[5]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[4]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[3]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[2]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[1]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port LED[0]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[15]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[14]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[13]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[12]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[11]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[10]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[9]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[8]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[7]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[6]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[5]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[4]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[3]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[2]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[1]
-WARNING: [Synth 8-3331] design GPIO_demo has unconnected port SW[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 614.965 ; gain = 407.848
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -660,9 +601,9 @@ WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/v_cntr_reg_dly_reg[2])
 WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/v_cntr_reg_dly_reg[1]) is unused and will be removed from module GPIO_demo.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 614.965 ; gain = 407.848
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -676,10 +617,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -690,23 +631,20 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'Inst_vga_ctrl/vga_blue_reg_reg[0]' (FDR) to 'Inst_vga_ctrl/vga_blue_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Inst_vga_ctrl/vga_blue_reg_reg[1]' (FDR) to 'Inst_vga_ctrl/vga_blue_reg_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Inst_vga_ctrl/vga_blue_reg_reg[2]' (FDR) to 'Inst_vga_ctrl/vga_blue_reg_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_vga_ctrl/Inst_MouseCtl/y_pos_reg[11] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_vga_ctrl/Inst_MouseCtl/ypos_reg[11] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_vga_ctrl/MOUSE_Y_POS_REG_reg[11] )
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 614.965 ; gain = 407.848
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -724,20 +662,28 @@ INFO: [Synth 8-5365] Flop Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/ps2_clk_
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[3] with 1st driver pin 'Inst_vga_ctrl/bg_green0__12/O' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:335]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[3] with 2nd driver pin 'Inst_vga_ctrl/bg_green_reg[3]/Q' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:344]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[2] with 1st driver pin 'Inst_vga_ctrl/bg_green0__9/O' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:335]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[2] with 2nd driver pin 'Inst_vga_ctrl/bg_green_reg[2]/Q' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:344]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[1] with 1st driver pin 'Inst_vga_ctrl/bg_green0__6/O' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:335]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[1] with 2nd driver pin 'Inst_vga_ctrl/bg_green_reg[1]/Q' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:344]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[0] with 1st driver pin 'Inst_vga_ctrl/bg_green0__3/O' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:335]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Inst_vga_ctrl/bg_green[0] with 2nd driver pin 'Inst_vga_ctrl/bg_green_reg[0]/Q' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd:344]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
+|1     |multi_driven_nets |      0|        4|Failed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -749,25 +695,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -784,29 +730,28 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     2|
-|2     |CARRY4     |    70|
-|3     |LUT1       |   162|
-|4     |LUT2       |   149|
-|5     |LUT3       |    75|
-|6     |LUT4       |    81|
-|7     |LUT5       |    70|
-|8     |LUT6       |   101|
+|2     |CARRY4     |    76|
+|3     |LUT1       |   166|
+|4     |LUT2       |   164|
+|5     |LUT3       |    88|
+|6     |LUT4       |   103|
+|7     |LUT5       |    82|
+|8     |LUT6       |   107|
 |9     |MMCME2_ADV |     1|
 |10    |MUXF7      |     6|
 |11    |MUXF8      |     1|
-|12    |FDRE       |   329|
-|13    |IBUF       |     1|
+|12    |FDRE       |   348|
+|13    |IBUF       |     5|
 |14    |IOBUF      |     2|
 |15    |OBUF       |    14|
-|16    |OBUFT      |    16|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+------------------------+------------------+------+
 |      |Instance                |Module            |Cells |
 +------+------------------------+------------------+------+
-|1     |top                     |                  |  1080|
-|2     |  Inst_vga_ctrl         |vga_ctrl          |  1047|
+|1     |top                     |                  |  1165|
+|2     |  Inst_vga_ctrl         |vga_ctrl          |  1144|
 |3     |    Inst_MouseCtl       |MouseCtl          |   676|
 |4     |      Inst_Ps2Interface |Ps2Interface      |   294|
 |5     |    Inst_MouseDisplay   |MouseDisplay      |   105|
@@ -814,13 +759,13 @@ Report Instance Areas:
 |7     |      U0                |clk_wiz_0_clk_wiz |     3|
 +------+------------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.965 ; gain = 407.848
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 175 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 614.730 ; gain = 115.336
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 614.730 ; gain = 407.980
+Synthesis finished with 0 errors, 8 critical warnings and 136 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 614.965 ; gain = 115.148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.965 ; gain = 407.848
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -829,8 +774,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-158 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+155 Infos, 103 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 614.730 ; gain = 407.980
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 614.730 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Aug 18 12:52:09 2016...
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 614.965 ; gain = 407.848
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 614.965 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 18 15:42:53 2016...

@@ -37,6 +37,7 @@ use ieee.math_real.all;
 
 entity vga_ctrl is
     Port ( CLK_I : in STD_LOGIC;
+           Button :    in   STD_LOGIC_VECTOR (4 downto 0);--button
            VGA_HS_O : out STD_LOGIC;
            VGA_VS_O : out STD_LOGIC;
            VGA_RED_O : out STD_LOGIC_VECTOR (3 downto 0);
@@ -314,14 +315,57 @@ begin
      process(pxl_clk)
      begin
          if(rising_edge(pxl_clk)) then
-             cntdyn <= cntdyn + 1;-- speed adjust 
+            if (Button(0)= '1') then 
+             cntdyn <= cntdyn + 200;-- speed adjust
+             else
+             
+             cntdyn <= cntdyn + 1;-- speed adjust
+            end if;
          end if;
+         
      end process;
-    
+     
+     process(pxl_clk) 
+     begin
+        if (rising_edge(pxl_clk)) then        
+          if (Button(1)= '1') then 
+                   bg_red   <= conv_std_logic_vector((-20 - 8 - cntDyn/2**20),8)(7 downto 4);
+                    else
+                   
+                     bg_red   <= conv_std_logic_vector((-intvcnt - inthcnt - cntDyn/2**20),8)(7 downto 4);
+                  end if;
+                  end if;
+       end process;  
+       
+      process(pxl_clk) 
+       begin
+          if (rising_edge(pxl_clk)) then        
+            if (Button(2)= '1') then 
+                bg_green <= conv_std_logic_vector((  8 - cntDyn/2**20),8)(7 downto 4);
+                else
+                bg_green <= conv_std_logic_vector(      -inthcnt - cntDyn/2**20, 8)(7 downto 4);
+             
+            end if;
+          end if;
+         end process;              
+         
+         process(pxl_clk) 
+                begin
+                   if (rising_edge(pxl_clk)) then        
+                     if (Button(3)= '1') then 
+                         bg_blue  <= conv_std_logic_vector((           -20 - cntDyn/2**20),8)(7 downto 4);
+                         else
+                          bg_blue  <= conv_std_logic_vector((           -intvcnt - cntDyn/2**20),8)(7 downto 4);
+                      
+                     end if;
+                   end if;
+                  end process;              
      intHcnt <= conv_integer(h_cntr_reg);
      intVcnt <= conv_integer(v_cntr_reg);
      -- black and white background 
-     bg_red   <= conv_std_logic_vector((-20 - 8 - cntDyn/2**20),8)(7 downto 4);
+   
+     
+    
      bg_green <= conv_std_logic_vector((-intvcnt - 8 - 8/2**20),8)(7 downto 4);
      --bg_red   <= conv_std_logic_vector((-intvcnt - inthcnt - cntDyn/2**20),8)(7 downto 4);
      --bg_green <= conv_std_logic_vector(            inthcnt - cntDyn/2**20, 8)(7 downto 4);

@@ -80,13 +80,15 @@ end component;
 
 component vga_ctrl
     Port ( CLK_I : in STD_LOGIC;
+           Button: in   STD_LOGIC_VECTOR (4 downto 0);--button
            VGA_HS_O : out STD_LOGIC;
            VGA_VS_O : out STD_LOGIC;
            VGA_RED_O : out STD_LOGIC_VECTOR (3 downto 0);
            VGA_BLUE_O : out STD_LOGIC_VECTOR (3 downto 0);
            VGA_GREEN_O : out STD_LOGIC_VECTOR (3 downto 0);
            PS2_CLK      : inout STD_LOGIC;
-           PS2_DATA     : inout STD_LOGIC
+           
+PS2_DATA     : inout STD_LOGIC
            );
 end component;
 
@@ -179,8 +181,8 @@ Inst_vga_ctrl: vga_ctrl port map(
         VGA_BLUE_O => VGA_BLUE,
         VGA_GREEN_O => VGA_GREEN,
         PS2_CLK => PS2_CLK,
-        PS2_DATA => PS2_DATA
-    
+        PS2_DATA => PS2_DATA,
+        Button =>  BTN 		
 	);
 
 end Behavioral;

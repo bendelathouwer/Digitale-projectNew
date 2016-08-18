@@ -5,8 +5,6 @@
 set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -21,10 +19,10 @@ read_vhdl -library xil_defaultlib {
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/Ps2Interface.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0_clk_wiz.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseDisplay.vhd}
-  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/MouseCtl.vhd}
-  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/debouncer.vhd}
+  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/clk_wiz_0.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/vga_ctrl.vhd}
+  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/debouncer.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.srcs/sources_1/imports/hdl/GPIO_Demo.vhd}
 }
 foreach dcp [get_files -quiet -all *.dcp] {
