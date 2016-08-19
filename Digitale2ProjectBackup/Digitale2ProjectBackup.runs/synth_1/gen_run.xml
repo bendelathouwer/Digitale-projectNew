@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1471513423">
-  <File Type="RDS-PROPCONSTRS" Name="GPIO_demo_drc_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1471607928">
   <File Type="PA-TCL" Name="GPIO_demo.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="GPIO_demo_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="GPIO_demo.vds"/>
   <File Type="RDS-UTIL" Name="GPIO_demo_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="GPIO_demo_utilization_synth.pb"/>
@@ -52,12 +52,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Begin project/src/hdl/UART_TX_CTRL.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../Begin project/src/hdl/GPIO_Demo.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -83,9 +77,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

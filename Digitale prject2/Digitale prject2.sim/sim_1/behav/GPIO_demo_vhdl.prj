@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/Ps2Interface.vhd"
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/clk_wiz_0_clk_wiz.vhd"
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/MouseDisplay.vhd"
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/clk_wiz_0.vhd"
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/MouseCtl.vhd"
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/debouncer.vhd"
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/vga_ctrl.vhd"
+vhdl xil_defaultlib  "../../../../Begin project/src/hdl/GPIO_Demo.vhd"
+
+# Do not sort compile order
+nosort

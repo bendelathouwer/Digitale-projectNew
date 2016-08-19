@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2_ project/Digitale2_ project.runs/impl_1'
+HD_PWD='C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log GPIO_demo.vdi -applog -m64 -messageDb vivado.pb -mode batch -source GPIO_demo.tcl -notrace
 
 

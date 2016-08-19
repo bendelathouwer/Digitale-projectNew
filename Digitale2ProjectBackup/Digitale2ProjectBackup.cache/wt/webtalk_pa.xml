@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Aug 18 12:22:38 2016">
+<application name="pa" timeStamp="Fri Aug 19 14:22:43 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="e11b929b18134f8c89fd15d8388dff14" type="ProjectID"/>
-<property name="ProjectIteration" value="38" type="ProjectIteration"/>
+<property name="ProjectIteration" value="54" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,9 +17,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
 <property name="AutoConnectTarget" value="12" type="JavaHandler"/>
+<property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="EditUndo" value="1" type="JavaHandler"/>
 <property name="LaunchProgramFpga" value="13" type="JavaHandler"/>
+<property name="LeaveFeedback" value="1" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenHardwareManager" value="13" type="JavaHandler"/>
 <property name="OpenProject" value="3" type="JavaHandler"/>
@@ -28,50 +31,18 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
 <property name="RefreshDevice" value="7" type="JavaHandler"/>
 <property name="RefreshTarget" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="18" type="JavaHandler"/>
-<property name="RunImplementation" value="21" type="JavaHandler"/>
-<property name="RunSynthesis" value="8" type="JavaHandler"/>
+<property name="RunBitgen" value="23" type="JavaHandler"/>
+<property name="RunImplementation" value="33" type="JavaHandler"/>
+<property name="RunSynthesis" value="13" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
 <property name="SaveProjectAs" value="1" type="JavaHandler"/>
-<property name="ShowView" value="4" type="JavaHandler"/>
+<property name="ShowView" value="5" type="JavaHandler"/>
+<property name="SimulationBreak" value="1" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="2" type="JavaHandler"/>
+<property name="SimulationRun" value="2" type="JavaHandler"/>
+<property name="SimulationRunAll" value="2" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="1" type="JavaHandler"/>
 <property name="ViewTaskRTLAnalysis" value="1" type="JavaHandler"/>
-</item>
-<item name="Gui Resources Info">
-<property name="GPIO_Demo.vhd, 78, 159" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, Auto Connect" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_OPEN_PROJECT, Open Project..." value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_WRITE_PROJECT_TCL, Write Project Tcl..." value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, GPIO_demo - Behavioral (GPIO_Demo.vhd" value="16" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Open Hardware Manager, Open Target], 31, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_EXPORT, Export" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="10" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_IMPORT, Import" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="5" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, Program device" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProgramFpgaDialog_PROGRAM, Program" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String" value="3" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Digitale2ProjectBackup" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="1" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_SAVE_FILE, Save File" value="1" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_SAVE_FILE_AS, Save File As..." value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 223, 278" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 276, 417" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 278, 406" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 281, 434" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 282, 398" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 285, 432" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 289, 468" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 358, 436, false, true, false, false, false" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 362, 434" value="1" type="GuiResourceData"/>
-<property name="vga_ctrl.vhd, 802, 531" value="1" type="GuiResourceData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="4" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="3" type="TclMode"/>
 </item>
 </section>
 </application>

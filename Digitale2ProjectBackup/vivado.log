@@ -1,0 +1,341 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Aug 19 13:42:25 2016
+# Process ID: 8596
+# Current directory: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1700 C:\Users\Ecto1\Documents\GitHub\Digitale projectNew\Digitale2ProjectBackup\Digitale2ProjectBackup.xpr
+# Log file: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/vivado.log
+# Journal file: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 812.766 ; gain = 147.488
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd" into library xil_defaultlib [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:1]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "-". [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:106]
+[Fri Aug 19 13:44:28 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Aug 19 13:45:03 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+[Fri Aug 19 13:45:03 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Fri Aug 19 13:46:44 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Aug 19 13:47:24 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+[Fri Aug 19 13:47:24 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Aug 19 13:48:58 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+[Fri Aug 19 13:48:58 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Aug 19 13:49:38 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+[Fri Aug 19 13:49:38 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd" into library xil_defaultlib [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:1]
+[Fri Aug 19 13:51:19 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd" into library xil_defaultlib [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:1]
+[Fri Aug 19 13:51:24 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+launch_runs impl_1
+[Fri Aug 19 13:52:00 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1
+[Fri Aug 19 13:53:00 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-1061] Parsing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd" into library xil_defaultlib [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:1]
+[Fri Aug 19 13:54:06 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+launch_runs impl_1
+[Fri Aug 19 13:54:48 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1
+[Fri Aug 19 13:55:20 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1
+[Fri Aug 19 13:55:47 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+[Fri Aug 19 13:55:47 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Fri Aug 19 13:57:31 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Fri Aug 19 13:58:48 2016] Launched synth_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/synth_1/runme.log
+[Fri Aug 19 13:58:48 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Fri Aug 19 14:00:51 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183624901A
+set_property PROGRAM.FILE {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.runs/impl_1/GPIO_demo.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+save_project_as {Digitale prject2} {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2} -force
+reset_run impl_1
+launch_runs impl_1
+[Fri Aug 19 14:03:15 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Fri Aug 19 14:04:19 2016] Launched impl_1...
+Run output will be captured here: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.runs/impl_1/GPIO_demo.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+file mkdir C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new
+can't create directory "C:/Users/Ecto1/Documents/GitHub/Digitale": file already exists
+file mkdir C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new
+can't create directory "C:/Users/Ecto1/Documents/GitHub/Digitale": file already exists
+file mkdir C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new
+can't create directory "C:/Users/Ecto1/Documents/GitHub/Digitale": file already exists
+file mkdir C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new
+can't create directory "C:/Users/Ecto1/Documents/GitHub/Digitale": file already exists
+file mkdir C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new
+can't create directory "C:/Users/Ecto1/Documents/GitHub/Digitale": file already exists
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new
+can't create directory "C:/Users/Ecto1/Documents/GitHub/Digitale": file already exists
+file mkdir {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new}
+close [ open {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new/Project_TestBench.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.srcs/sim_1/new/Project_TestBench.vhd}}
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'GPIO_demo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj GPIO_demo_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/Ps2Interface.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Ps2Interface
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0_clk_wiz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0_clk_wiz
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseDisplay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MouseDisplay
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseCtl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MouseCtl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity debouncer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity vga_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity GPIO_demo
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto d92fcd9300994dd493ac14b68da4c844 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot GPIO_demo_behav xil_defaultlib.GPIO_demo -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=10.1...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0_clk_wiz [clk_wiz_0_clk_wiz_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0 [clk_wiz_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Ps2Interface [ps2interface_default]
+Compiling architecture behavioral of entity xil_defaultlib.MouseCtl [\MouseCtl(sysclk_frequency_hz=10...]
+Compiling architecture behavioral of entity xil_defaultlib.MouseDisplay [mousedisplay_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga_ctrl [vga_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.gpio_demo
+Built simulation snapshot GPIO_demo_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Ecto1/Documents/GitHub/Digitale -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/Ecto1/Documents/GitHub/Digitale" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Fri Aug 19 14:11:42 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "GPIO_demo_behav -key {Behavioral:sim_1:Functional:GPIO_demo} -tclbatch {GPIO_demo.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source GPIO_demo.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'GPIO_demo_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.418 ; gain = 64.719
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:26 . Memory (MB): peak = 1039.418 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1039.418 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'GPIO_demo' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj GPIO_demo_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/Ps2Interface.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Ps2Interface
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0_clk_wiz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0_clk_wiz
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseDisplay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MouseDisplay
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_wiz_0
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseCtl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MouseCtl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity debouncer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity vga_ctrl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity GPIO_demo
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto d92fcd9300994dd493ac14b68da4c844 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot GPIO_demo_behav xil_defaultlib.GPIO_demo -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=10.1...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0_clk_wiz [clk_wiz_0_clk_wiz_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_0 [clk_wiz_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Ps2Interface [ps2interface_default]
+Compiling architecture behavioral of entity xil_defaultlib.MouseCtl [\MouseCtl(sysclk_frequency_hz=10...]
+Compiling architecture behavioral of entity xil_defaultlib.MouseDisplay [mousedisplay_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga_ctrl [vga_ctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.gpio_demo
+Built simulation snapshot GPIO_demo_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1039.418 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1039.418 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 19 14:14:00 2016...

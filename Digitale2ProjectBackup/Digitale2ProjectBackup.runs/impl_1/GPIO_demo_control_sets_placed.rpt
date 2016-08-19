@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Thu Aug 18 11:45:14 2016
+| Date         : Fri Aug 19 14:23:13 2016
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file GPIO_demo_control_sets_placed.rpt
 | Design       : GPIO_demo
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    37 |
-| Unused register locations in slices containing registers |    94 |
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    68 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             129 |           60 |
+| No           | No                    | No                     |             125 |           55 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             230 |           63 |
-| Yes          | No                    | No                     |              91 |           36 |
+| No           | Yes                   | No                     |              86 |           25 |
+| Yes          | No                    | No                     |              76 |           24 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             128 |           37 |
+| Yes          | Yes                   | No                     |              61 |           19 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -50,41 +50,26 @@ Table of Contents
 +-------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_inter0                   |                1 |              4 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/data_inter0                  |                1 |              4 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/state[4]                     |                2 |              4 |
-|  CLK_IBUF_BUFG                            | eqOp2_in                                                                   | tmrVal[3]_i_1_n_0                                                          |                1 |              4 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_sign_reg_0                 |                                                                            |                2 |              4 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/state[4]                     |                3 |              4 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/shift_frame                  | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/reset_bit_count              |                2 |              4 |
-|  CLK_IBUF_BUFG                            |                                                                            | sendStr[16][0]_i_1_n_0                                                     |                2 |              5 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_sign_reg_0                 |                                                                            |                1 |              4 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/x_inc_reg[0]                 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/x_inc_reg[5]                 |                2 |              5 |
-|  CLK_IBUF_BUFG                            | uartSend                                                                   |                                                                            |                2 |              7 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_63clk_count[6]_i_2_n_0 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_63clk_count[6]_i_1_n_0 |                2 |              7 |
-|  CLK_IBUF_BUFG                            | strIndex                                                                   |                                                                            |                6 |              7 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/write_data                                     |                                                                            |                2 |              8 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/load_rx_data                 |                                                                            |                3 |              8 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]                 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[7]                 |                4 |              8 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/y_new_reg_n_0                                  |                                                                            |                4 |             11 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                2 |             11 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/frame[10]_i_1_n_0            |                                                                            |                3 |             11 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/vga_red_reg[3]_i_1_n_0                                       |                4 |             12 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/x_new_reg_n_0                                  |                                                                            |                5 |             12 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/eqOp4_in                                                     | Inst_vga_ctrl/v_cntr_reg0                                                  |                3 |             12 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]                 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[7]                 |                3 |              8 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/write_data                                     |                                                                            |                2 |              8 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/frame[9]_i_1_n_0             |                                                                            |                2 |             10 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_2_n_0 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count[10]_i_1_n_0 |                3 |             11 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/y_new_reg_n_0                                  |                                                                            |                3 |             11 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/eqOp4_in                                                     |                3 |             12 |
-|  CLK_IBUF_BUFG                            |                                                                            | Inst_UART_TX_CTRL/bitTmr[0]_i_1_n_0                                        |                4 |             14 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/vga_red_reg[3]_i_1_n_0                                       |                3 |             12 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/x_new_reg_n_0                                  |                                                                            |                4 |             12 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/eqOp4_in                                                     | Inst_vga_ctrl/v_cntr_reg0                                                  |                3 |             12 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_100us_count[0]_i_2_n_0 | Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_100us_count[0]_i_1_n_0 |                4 |             14 |
-|  CLK_IBUF_BUFG                            |                                                                            | Inst_btn_debounce/sig_cntrs_ary[0][0]_i_1_n_0                              |                4 |             16 |
-|  CLK_IBUF_BUFG                            |                                                                            | Inst_btn_debounce/sig_cntrs_ary[1][0]_i_1_n_0                              |                4 |             16 |
-|  CLK_IBUF_BUFG                            |                                                                            | Inst_btn_debounce/sig_cntrs_ary[2][0]_i_1_n_0                              |                4 |             16 |
-|  CLK_IBUF_BUFG                            |                                                                            | Inst_btn_debounce/sig_cntrs_ary[3][0]_i_1_n_0                              |                4 |             16 |
-|  CLK_IBUF_BUFG                            |                                                                            | Inst_btn_debounce/sig_cntrs_ary[4][0]_i_1_n_0                              |                4 |             16 |
-|  CLK_IBUF_BUFG                            |                                                                            |                                                                            |               11 |             17 |
-|  CLK_IBUF_BUFG                            |                                                                            | reset_cntr0                                                                |                5 |             18 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 | Inst_vga_ctrl/v_sync_reg                                                   |                                                                            |                9 |             23 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/reset_timeout_cnt                              |                7 |             24 |
 |  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            | Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt                       |                7 |             26 |
-|  CLK_IBUF_BUFG                            |                                                                            | tmrCntr0                                                                   |                7 |             27 |
-|  CLK_IBUF_BUFG                            | strIndex                                                                   | strIndex0                                                                  |                8 |             31 |
-|  CLK_IBUF_BUFG                            | Inst_UART_TX_CTRL/txBit                                                    | Inst_UART_TX_CTRL/READY                                                    |                9 |             32 |
-|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            |                                                                            |               49 |            112 |
+|  Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1 |                                                                            |                                                                            |               55 |            125 |
 +-------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
 
 

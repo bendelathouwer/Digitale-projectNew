@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Thu Aug 18 11:45:39 2016
+| Date             : Fri Aug 19 14:23:40 2016
 | Host             : MSI running 64-bit major release  (build 9200)
 | Command          : report_power -file GPIO_demo_power_routed.rpt -pb GPIO_demo_power_summary_routed.pb -rpx GPIO_demo_power_routed.rpx
 | Design           : GPIO_demo
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.225 |
-| Dynamic (W)              | 0.153 |
+| Total On-Chip Power (W)  | 0.208 |
+| Dynamic (W)              | 0.136 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 83.9  |
-| Junction Temperature (C) | 26.1  |
+| Max Ambient (C)          | 84.0  |
+| Junction Temperature (C) | 26.0  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,18 +49,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.005 |        5 |       --- |             --- |
-| Slice Logic    |     0.003 |     1406 |       --- |             --- |
-|   LUT as Logic |     0.002 |      552 |     20800 |            2.65 |
-|   CARRY4       |    <0.001 |      127 |      8150 |            1.56 |
-|   Register     |    <0.001 |      578 |     41600 |            1.39 |
-|   F7/F8 Muxes  |    <0.001 |        9 |     32600 |            0.03 |
-|   Others       |     0.000 |       17 |       --- |             --- |
-| Signals        |     0.003 |     1104 |       --- |             --- |
+| Clocks         |     0.003 |        5 |       --- |             --- |
+| Slice Logic    |     0.003 |     1003 |       --- |             --- |
+|   LUT as Logic |     0.002 |      447 |     20800 |            2.15 |
+|   CARRY4       |    <0.001 |       76 |      8150 |            0.93 |
+|   Register     |    <0.001 |      348 |     41600 |            0.84 |
+|   F7/F8 Muxes  |    <0.001 |        7 |     32600 |            0.02 |
+|   Others       |     0.000 |       12 |       --- |             --- |
+| Signals        |     0.002 |      730 |       --- |             --- |
 | MMCM           |     0.123 |        1 |         5 |           20.00 |
-| I/O            |     0.019 |       67 |       106 |           63.21 |
+| I/O            |     0.004 |       21 |       106 |           19.81 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.225 |          |           |                 |
+| Total          |     0.208 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,9 +70,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.021 |       0.011 |      0.010 |
-| Vccaux    |       1.800 |     0.082 |       0.069 |      0.013 |
-| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
+| Vccint    |       1.000 |     0.018 |       0.009 |      0.010 |
+| Vccaux    |       1.800 |     0.081 |       0.068 |      0.013 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -141,10 +141,8 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| GPIO_demo               |     0.153 |
-|   Inst_UART_TX_CTRL     |    <0.001 |
-|   Inst_btn_debounce     |    <0.001 |
-|   Inst_vga_ctrl         |     0.130 |
+| GPIO_demo               |     0.136 |
+|   Inst_vga_ctrl         |     0.131 |
 |     Inst_MouseCtl       |     0.005 |
 |       Inst_Ps2Interface |     0.002 |
 |     Inst_MouseDisplay   |    <0.001 |
