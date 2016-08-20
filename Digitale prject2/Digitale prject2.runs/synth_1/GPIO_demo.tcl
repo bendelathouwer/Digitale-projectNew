@@ -9,8 +9,8 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale2ProjectBackup/Digitale2ProjectBackup.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale prject2/Digitale prject2.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]

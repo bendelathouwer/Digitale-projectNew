@@ -141,26 +141,6 @@ begin
 --to trigger UART messages
 
 
---Debounces btn signals
-Inst_btn_debounce: debouncer 
-    generic map(
-        DEBNC_CLOCKS => (2**16),
-        PORT_WIDTH => 5)
-    port map(
-		SIGNAL_I => BTN,
-		CLK_I => CLK,
-		SIGNAL_O => btnDeBnc
-	);
-
---Registers the debounced button signals, for edge detection.
-btn_reg_process : process (CLK)
-begin
-	if (rising_edge(CLK)) then
-		btnReg <= btnDeBnc(3 downto 0);
-	end if;
-end process;
-
-
 
 
 

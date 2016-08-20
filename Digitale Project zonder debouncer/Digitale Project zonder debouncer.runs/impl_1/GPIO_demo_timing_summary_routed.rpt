@@ -1,0 +1,1565 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Aug 20 18:48:26 2016
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file GPIO_demo_timing_summary_routed.rpt -rpx GPIO_demo_timing_summary_routed.rpx
+| Design       : GPIO_demo
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.14 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 6 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 16 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.539        0.000                      0                  630        0.044        0.000                      0                  630        3.000        0.000                       0                   354  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                 Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                 ------------         ----------      --------------
+sys_clk_pin           {0.000 5.000}        10.000          100.000         
+  clk_out1_clk_wiz_0  {0.000 4.630}        9.259           108.000         
+  clkfbout_clk_wiz_0  {0.000 5.000}        10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin                                                                                                                                                             3.000        0.000                       0                     1  
+  clk_out1_clk_wiz_0        3.539        0.000                      0                  630        0.044        0.000                      0                  630        4.130        0.000                       0                   350  
+  clkfbout_clk_wiz_0                                                                                                                                                    7.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { CLK }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_clk_wiz_0
+  To Clock:  clk_out1_clk_wiz_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.539ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.044ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.130ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.539ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.814ns  (logic 1.174ns (24.388%)  route 3.640ns (75.612%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.514     3.860    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X8Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[0]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X8Y49          FDRE (Setup_fdre_C_R)       -0.728     7.399    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[0]
+  -------------------------------------------------------------------
+                         required time                          7.399    
+                         arrival time                          -3.860    
+  -------------------------------------------------------------------
+                         slack                                  3.539    
+
+Slack (MET) :             3.539ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.814ns  (logic 1.174ns (24.388%)  route 3.640ns (75.612%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.514     3.860    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X8Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[1]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X8Y49          FDRE (Setup_fdre_C_R)       -0.728     7.399    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[1]
+  -------------------------------------------------------------------
+                         required time                          7.399    
+                         arrival time                          -3.860    
+  -------------------------------------------------------------------
+                         slack                                  3.539    
+
+Slack (MET) :             3.539ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[7]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.814ns  (logic 1.174ns (24.388%)  route 3.640ns (75.612%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.514     3.860    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X8Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[7]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[7]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X8Y49          FDRE (Setup_fdre_C_R)       -0.728     7.399    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[7]
+  -------------------------------------------------------------------
+                         required time                          7.399    
+                         arrival time                          -3.860    
+  -------------------------------------------------------------------
+                         slack                                  3.539    
+
+Slack (MET) :             3.594ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/x_overflow_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        5.583ns  (logic 2.439ns (43.686%)  route 3.144ns (56.314%))
+  Logic Levels:           7  (CARRY4=4 LUT2=1 LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.942ns
+    Clock Pessimism Removal (CPR):    0.564ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.570    -0.942    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_overflow_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y48          FDRE (Prop_fdre_C_Q)         0.518    -0.424 r  Inst_vga_ctrl/Inst_MouseCtl/x_overflow_reg/Q
+                         net (fo=19, routed)          1.188     0.765    Inst_vga_ctrl/Inst_MouseCtl/x_overflow
+    SLICE_X8Y45          LUT3 (Prop_lut3_I1_O)        0.124     0.889 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos[3]_i_4/O
+                         net (fo=1, routed)           0.000     0.889    Inst_vga_ctrl/Inst_MouseCtl/x_pos[3]_i_4_n_0
+    SLICE_X8Y45          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     1.269 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     1.269    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[3]_i_2_n_0
+    SLICE_X8Y46          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.386 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     1.386    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[7]_i_2_n_0
+    SLICE_X8Y47          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     1.605 f  Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry_i_1/O[0]
+                         net (fo=3, routed)           0.919     2.524    Inst_vga_ctrl/Inst_MouseCtl/plusOp6[8]
+    SLICE_X7Y47          LUT2 (Prop_lut2_I0_O)        0.295     2.819 r  Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry_i_4/O
+                         net (fo=1, routed)           0.000     2.819    Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry_i_4_n_0
+    SLICE_X7Y47          CARRY4 (Prop_carry4_S[0]_CO[1])
+                                                      0.457     3.276 r  Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry/CO[1]
+                         net (fo=12, routed)          1.037     4.312    Inst_vga_ctrl/Inst_MouseCtl/gtOp
+    SLICE_X11Y46         LUT5 (Prop_lut5_I3_O)        0.329     4.641 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos[1]_i_1/O
+                         net (fo=1, routed)           0.000     4.641    Inst_vga_ctrl/Inst_MouseCtl/x_pos[1]_i_1_n_0
+    SLICE_X11Y46         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X11Y46         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[1]/C
+                         clock pessimism              0.564     8.279    
+                         clock uncertainty           -0.072     8.207    
+    SLICE_X11Y46         FDRE (Setup_fdre_C_D)        0.029     8.236    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[1]
+  -------------------------------------------------------------------
+                         required time                          8.236    
+                         arrival time                          -4.641    
+  -------------------------------------------------------------------
+                         slack                                  3.594    
+
+Slack (MET) :             3.598ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/x_overflow_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        5.581ns  (logic 2.439ns (43.702%)  route 3.142ns (56.298%))
+  Logic Levels:           7  (CARRY4=4 LUT2=1 LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.039ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.942ns
+    Clock Pessimism Removal (CPR):    0.564ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.570    -0.942    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_overflow_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y48          FDRE (Prop_fdre_C_Q)         0.518    -0.424 r  Inst_vga_ctrl/Inst_MouseCtl/x_overflow_reg/Q
+                         net (fo=19, routed)          1.188     0.765    Inst_vga_ctrl/Inst_MouseCtl/x_overflow
+    SLICE_X8Y45          LUT3 (Prop_lut3_I1_O)        0.124     0.889 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos[3]_i_4/O
+                         net (fo=1, routed)           0.000     0.889    Inst_vga_ctrl/Inst_MouseCtl/x_pos[3]_i_4_n_0
+    SLICE_X8Y45          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     1.269 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[3]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     1.269    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[3]_i_2_n_0
+    SLICE_X8Y46          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     1.386 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[7]_i_2/CO[3]
+                         net (fo=1, routed)           0.000     1.386    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[7]_i_2_n_0
+    SLICE_X8Y47          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219     1.605 f  Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry_i_1/O[0]
+                         net (fo=3, routed)           0.919     2.524    Inst_vga_ctrl/Inst_MouseCtl/plusOp6[8]
+    SLICE_X7Y47          LUT2 (Prop_lut2_I0_O)        0.295     2.819 r  Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry_i_4/O
+                         net (fo=1, routed)           0.000     2.819    Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry_i_4_n_0
+    SLICE_X7Y47          CARRY4 (Prop_carry4_S[0]_CO[1])
+                                                      0.457     3.276 r  Inst_vga_ctrl/Inst_MouseCtl/gtOp_carry/CO[1]
+                         net (fo=12, routed)          1.035     4.310    Inst_vga_ctrl/Inst_MouseCtl/gtOp
+    SLICE_X11Y46         LUT5 (Prop_lut5_I3_O)        0.329     4.639 r  Inst_vga_ctrl/Inst_MouseCtl/x_pos[2]_i_1/O
+                         net (fo=1, routed)           0.000     4.639    Inst_vga_ctrl/Inst_MouseCtl/x_pos[2]_i_1_n_0
+    SLICE_X11Y46         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X11Y46         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[2]/C
+                         clock pessimism              0.564     8.279    
+                         clock uncertainty           -0.072     8.207    
+    SLICE_X11Y46         FDRE (Setup_fdre_C_D)        0.031     8.238    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[2]
+  -------------------------------------------------------------------
+                         required time                          8.238    
+                         arrival time                          -4.639    
+  -------------------------------------------------------------------
+                         slack                                  3.598    
+
+Slack (MET) :             3.614ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.833ns  (logic 1.174ns (24.289%)  route 3.659ns (75.711%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.534     3.880    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X9Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X9Y48          FDRE (Setup_fdre_C_R)       -0.633     7.494    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]
+  -------------------------------------------------------------------
+                         required time                          7.494    
+                         arrival time                          -3.880    
+  -------------------------------------------------------------------
+                         slack                                  3.614    
+
+Slack (MET) :             3.634ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.814ns  (logic 1.174ns (24.388%)  route 3.640ns (75.612%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.514     3.860    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[2]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X9Y49          FDRE (Setup_fdre_C_R)       -0.633     7.494    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[2]
+  -------------------------------------------------------------------
+                         required time                          7.494    
+                         arrival time                          -3.860    
+  -------------------------------------------------------------------
+                         slack                                  3.634    
+
+Slack (MET) :             3.634ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.814ns  (logic 1.174ns (24.388%)  route 3.640ns (75.612%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.514     3.860    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X9Y49          FDRE (Setup_fdre_C_R)       -0.633     7.494    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]
+  -------------------------------------------------------------------
+                         required time                          7.494    
+                         arrival time                          -3.860    
+  -------------------------------------------------------------------
+                         slack                                  3.634    
+
+Slack (MET) :             3.634ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.814ns  (logic 1.174ns (24.388%)  route 3.640ns (75.612%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.514     3.860    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X9Y49          FDRE (Setup_fdre_C_R)       -0.633     7.494    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]
+  -------------------------------------------------------------------
+                         required time                          7.494    
+                         arrival time                          -3.860    
+  -------------------------------------------------------------------
+                         slack                                  3.634    
+
+Slack (MET) :             3.634ns  (required time - arrival time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[5]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.259ns  (clk_out1_clk_wiz_0 rise@9.259ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        4.814ns  (logic 1.174ns (24.388%)  route 3.640ns (75.612%))
+  Logic Levels:           4  (LUT2=1 LUT4=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        -0.107ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.544ns = ( 7.715 - 9.259 ) 
+    Source Clock Delay      (SCD):    -0.954ns
+    Clock Pessimism Removal (CPR):    0.484ns
+  Clock Uncertainty:      0.072ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.126ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.691    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.961    -4.269 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.661    -2.608    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.512 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.558    -0.954    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.456    -0.498 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[0]/Q
+                         net (fo=14, routed)          1.030     0.532    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[0]
+    SLICE_X12Y50         LUT4 (Prop_lut4_I0_O)        0.150     0.682 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5/O
+                         net (fo=5, routed)           0.765     1.447    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_5_n_0
+    SLICE_X8Y49          LUT5 (Prop_lut5_I0_O)        0.328     1.775 f  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_2/O
+                         net (fo=3, routed)           0.683     2.458    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/eqOp_0
+    SLICE_X8Y49          LUT6 (Prop_lut6_I2_O)        0.124     2.582 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_2/O
+                         net (fo=9, routed)           0.648     3.230    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc_reg[0]
+    SLICE_X10Y48         LUT2 (Prop_lut2_I0_O)        0.116     3.346 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[7]_i_1/O
+                         net (fo=8, routed)           0.514     3.860    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_4
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[5]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      9.259     9.259 r  
+    W5                                                0.000     9.259 r  CLK (IN)
+                         net (fo=0)                   0.000     9.259    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    10.647 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           1.162    11.809    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.217     4.592 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.581     6.173    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.264 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         1.451     7.715    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[5]/C
+                         clock pessimism              0.484     8.199    
+                         clock uncertainty           -0.072     8.127    
+    SLICE_X9Y49          FDRE (Setup_fdre_C_R)       -0.633     7.494    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[5]
+  -------------------------------------------------------------------
+                         required time                          7.494    
+                         arrival time                          -3.860    
+  -------------------------------------------------------------------
+                         slack                                  3.634    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.044ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.408ns  (logic 0.186ns (45.546%)  route 0.222ns (54.454%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.853ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.141    -0.475 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[1]/Q
+                         net (fo=13, routed)          0.222    -0.253    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[1]
+    SLICE_X9Y49          LUT5 (Prop_lut5_I3_O)        0.045    -0.208 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[4]_i_1/O
+                         net (fo=1, routed)           0.000    -0.208    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_29
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.837    -0.853    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]/C
+                         clock pessimism              0.508    -0.344    
+    SLICE_X9Y49          FDRE (Hold_fdre_C_D)         0.092    -0.252    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[4]
+  -------------------------------------------------------------------
+                         required time                          0.252    
+                         arrival time                          -0.208    
+  -------------------------------------------------------------------
+                         slack                                  0.044    
+
+Slack (MET) :             0.108ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_new_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.472ns  (logic 0.186ns (39.420%)  route 0.286ns (60.580%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.273ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.825ns
+    Source Clock Delay      (SCD):    -0.589ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.592    -0.589    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X5Y52          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y52          FDRE (Prop_fdre_C_Q)         0.141    -0.448 f  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[5]/Q
+                         net (fo=28, routed)          0.286    -0.162    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/out[5]
+    SLICE_X7Y49          LUT6 (Prop_lut6_I5_O)        0.045    -0.117 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_new_i_1/O
+                         net (fo=1, routed)           0.000    -0.117    Inst_vga_ctrl/Inst_MouseCtl/y_new
+    SLICE_X7Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_new_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.865    -0.825    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X7Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_new_reg/C
+                         clock pessimism              0.508    -0.316    
+    SLICE_X7Y49          FDRE (Hold_fdre_C_D)         0.091    -0.225    Inst_vga_ctrl/Inst_MouseCtl/y_new_reg
+  -------------------------------------------------------------------
+                         required time                          0.225    
+                         arrival time                          -0.117    
+  -------------------------------------------------------------------
+                         slack                                  0.108    
+
+Slack (MET) :             0.123ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_sign_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.526ns  (logic 0.207ns (39.372%)  route 0.319ns (60.628%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.853ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y50          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y50          FDRE (Prop_fdre_C_Q)         0.164    -0.452 r  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[4]/Q
+                         net (fo=56, routed)          0.319    -0.134    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/out[4]
+    SLICE_X8Y48          LUT3 (Prop_lut3_I1_O)        0.043    -0.091 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_sign_i_1/O
+                         net (fo=1, routed)           0.000    -0.091    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_6
+    SLICE_X8Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_sign_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.837    -0.853    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_sign_reg/C
+                         clock pessimism              0.508    -0.344    
+    SLICE_X8Y48          FDRE (Hold_fdre_C_D)         0.131    -0.213    Inst_vga_ctrl/Inst_MouseCtl/y_sign_reg
+  -------------------------------------------------------------------
+                         required time                          0.213    
+                         arrival time                          -0.091    
+  -------------------------------------------------------------------
+                         slack                                  0.123    
+
+Slack (MET) :             0.135ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_overflow_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.528ns  (logic 0.209ns (39.602%)  route 0.319ns (60.398%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.853ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y50          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X8Y50          FDRE (Prop_fdre_C_Q)         0.164    -0.452 r  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[4]/Q
+                         net (fo=56, routed)          0.319    -0.134    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/out[4]
+    SLICE_X8Y48          LUT3 (Prop_lut3_I0_O)        0.045    -0.089 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_overflow_i_1/O
+                         net (fo=1, routed)           0.000    -0.089    Inst_vga_ctrl/Inst_MouseCtl/y_overflow_2
+    SLICE_X8Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_overflow_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.837    -0.853    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X8Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_overflow_reg/C
+                         clock pessimism              0.508    -0.344    
+    SLICE_X8Y48          FDRE (Hold_fdre_C_D)         0.121    -0.223    Inst_vga_ctrl/Inst_MouseCtl/y_overflow_reg
+  -------------------------------------------------------------------
+                         required time                          0.223    
+                         arrival time                          -0.089    
+  -------------------------------------------------------------------
+                         slack                                  0.135    
+
+Slack (MET) :             0.137ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.500ns  (logic 0.227ns (45.433%)  route 0.273ns (54.567%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.853ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.128    -0.488 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[4]/Q
+                         net (fo=12, routed)          0.273    -0.216    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[4]
+    SLICE_X9Y48          LUT4 (Prop_lut4_I1_O)        0.099    -0.117 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[6]_i_1/O
+                         net (fo=1, routed)           0.000    -0.117    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_31
+    SLICE_X9Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.837    -0.853    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y48          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]/C
+                         clock pessimism              0.508    -0.344    
+    SLICE_X9Y48          FDRE (Hold_fdre_C_D)         0.091    -0.253    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[6]
+  -------------------------------------------------------------------
+                         required time                          0.253    
+                         arrival time                          -0.117    
+  -------------------------------------------------------------------
+                         slack                                  0.137    
+
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/x_new_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[8]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.376ns  (logic 0.141ns (37.456%)  route 0.235ns (62.544%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.853ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y50          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_new_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y50          FDRE (Prop_fdre_C_Q)         0.141    -0.475 r  Inst_vga_ctrl/Inst_MouseCtl/x_new_reg/Q
+                         net (fo=12, routed)          0.235    -0.240    Inst_vga_ctrl/Inst_MouseCtl/x_new_reg_n_0
+    SLICE_X11Y47         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[8]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.837    -0.853    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X11Y47         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[8]/C
+                         clock pessimism              0.508    -0.344    
+    SLICE_X11Y47         FDRE (Hold_fdre_C_CE)       -0.039    -0.383    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[8]
+  -------------------------------------------------------------------
+                         required time                          0.383    
+                         arrival time                          -0.240    
+  -------------------------------------------------------------------
+                         slack                                  0.144    
+
+Slack (MET) :             0.144ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/x_new_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[9]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.376ns  (logic 0.141ns (37.456%)  route 0.235ns (62.544%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.853ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y50          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_new_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y50          FDRE (Prop_fdre_C_Q)         0.141    -0.475 r  Inst_vga_ctrl/Inst_MouseCtl/x_new_reg/Q
+                         net (fo=12, routed)          0.235    -0.240    Inst_vga_ctrl/Inst_MouseCtl/x_new_reg_n_0
+    SLICE_X11Y47         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[9]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.837    -0.853    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X11Y47         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[9]/C
+                         clock pessimism              0.508    -0.344    
+    SLICE_X11Y47         FDRE (Hold_fdre_C_CE)       -0.039    -0.383    Inst_vga_ctrl/Inst_MouseCtl/x_pos_reg[9]
+  -------------------------------------------------------------------
+                         required time                          0.383    
+                         arrival time                          -0.240    
+  -------------------------------------------------------------------
+                         slack                                  0.144    
+
+Slack (MET) :             0.150ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.516ns  (logic 0.186ns (36.027%)  route 0.330ns (63.973%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.275ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.823ns
+    Source Clock Delay      (SCD):    -0.589ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.592    -0.589    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X5Y52          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X5Y52          FDRE (Prop_fdre_C_Q)         0.141    -0.448 r  Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[5]/Q
+                         net (fo=28, routed)          0.330    -0.118    Inst_vga_ctrl/Inst_MouseCtl/state[5]
+    SLICE_X3Y49          LUT4 (Prop_lut4_I2_O)        0.045    -0.073 r  Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt_i_1/O
+                         net (fo=1, routed)           0.000    -0.073    Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt_i_1_n_0
+    SLICE_X3Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.867    -0.823    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X3Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt_reg/C
+                         clock pessimism              0.508    -0.314    
+    SLICE_X3Y49          FDRE (Hold_fdre_C_D)         0.091    -0.223    Inst_vga_ctrl/Inst_MouseCtl/reset_periodic_check_cnt_reg
+  -------------------------------------------------------------------
+                         required time                          0.223    
+                         arrival time                          -0.073    
+  -------------------------------------------------------------------
+                         slack                                  0.150    
+
+Slack (MET) :             0.155ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/tx_data_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/tx_parity_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.289ns  (logic 0.186ns (64.307%)  route 0.103ns (35.693%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.855ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.252ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X11Y52         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/tx_data_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X11Y52         FDRE (Prop_fdre_C_Q)         0.141    -0.475 r  Inst_vga_ctrl/Inst_MouseCtl/tx_data_reg[2]/Q
+                         net (fo=2, routed)           0.103    -0.372    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/tx_data_reg[7][2]
+    SLICE_X10Y52         LUT5 (Prop_lut5_I0_O)        0.045    -0.327 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/tx_parity_i_1/O
+                         net (fo=1, routed)           0.000    -0.327    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/tx_parity_i_1_n_0
+    SLICE_X10Y52         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/tx_parity_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.834    -0.855    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X10Y52         FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/tx_parity_reg/C
+                         clock pessimism              0.252    -0.603    
+    SLICE_X10Y52         FDRE (Hold_fdre_C_D)         0.121    -0.482    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/tx_parity_reg
+  -------------------------------------------------------------------
+                         required time                          0.482    
+                         arrival time                          -0.327    
+  -------------------------------------------------------------------
+                         slack                                  0.155    
+
+Slack (MET) :             0.157ns  (arrival time - required time)
+  Source:                 Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Destination:            Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@4.630ns period=9.259ns})
+  Path Group:             clk_out1_clk_wiz_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Data Path Delay:        0.536ns  (logic 0.187ns (34.901%)  route 0.349ns (65.099%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.272ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.853ns
+    Source Clock Delay      (SCD):    -0.616ns
+    Clock Pessimism Removal (CPR):    -0.508ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.667    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.360    -1.693 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.486    -1.207    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.181 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.565    -0.616    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/clk_out1
+    SLICE_X9Y51          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y51          FDRE (Prop_fdre_C_Q)         0.141    -0.475 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/rx_data_reg[3]/Q
+                         net (fo=11, routed)          0.349    -0.126    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/Q[3]
+    SLICE_X9Y49          LUT4 (Prop_lut4_I0_O)        0.046    -0.080 r  Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/y_inc[3]_i_1/O
+                         net (fo=1, routed)           0.000    -0.080    Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface_n_34
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0 rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  CLK (IN)
+                         net (fo=0)                   0.000     0.000    CLK
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  CLK_IBUF_inst/O
+                         net (fo=1, routed)           0.480     0.894    Inst_vga_ctrl/clk_wiz_0_inst/U0/CLK_I
+    MMCME2_ADV_X1Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.142    -2.248 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.530    -1.718    Inst_vga_ctrl/clk_wiz_0_inst/U0/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.689 r  Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/O
+                         net (fo=348, routed)         0.837    -0.853    Inst_vga_ctrl/Inst_MouseCtl/clk_out1
+    SLICE_X9Y49          FDRE                                         r  Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]/C
+                         clock pessimism              0.508    -0.344    
+    SLICE_X9Y49          FDRE (Hold_fdre_C_D)         0.107    -0.237    Inst_vga_ctrl/Inst_MouseCtl/y_inc_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.237    
+                         arrival time                          -0.080    
+  -------------------------------------------------------------------
+                         slack                                  0.157    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_clk_wiz_0
+Waveform(ns):       { 0.000 4.630 }
+Period(ns):         9.259
+Sources:            { Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         9.259       7.104      BUFGCTRL_X0Y0    Inst_vga_ctrl/clk_wiz_0_inst/U0/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         9.259       8.010      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X6Y50      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[0]/C
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X4Y50      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[1]/C
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X4Y50      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[2]/C
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X6Y51      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[3]/C
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X8Y50      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[4]/C
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X5Y56      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/FSM_sequential_state_reg[3]/C
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X4Y55      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/FSM_sequential_state_reg[4]/C
+Min Period        n/a     FDRE/C              n/a            1.000         9.259       8.259      SLICE_X5Y54      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/bit_count_reg[0]/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       9.259       204.101    MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X5Y56      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/FSM_sequential_state_reg[3]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X4Y55      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/FSM_sequential_state_reg[4]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X5Y54      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/bit_count_reg[0]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X5Y54      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/bit_count_reg[1]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X5Y54      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/bit_count_reg[2]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X5Y55      Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/bit_count_reg[3]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X10Y58     Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count_reg[0]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X10Y57     Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count_reg[10]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X10Y58     Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count_reg[1]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X10Y57     Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/delay_20us_count_reg[2]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X6Y50      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[0]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X4Y50      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[1]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X4Y50      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[2]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X6Y51      Inst_vga_ctrl/Inst_MouseCtl/FSM_sequential_state_reg[3]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X4Y51      Inst_vga_ctrl/Inst_MouseCtl/reset_timeout_cnt_reg/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X8Y42      Inst_vga_ctrl/MOUSE_X_POS_REG_reg[3]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X8Y42      Inst_vga_ctrl/MOUSE_X_POS_REG_reg[4]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X8Y42      Inst_vga_ctrl/MOUSE_X_POS_REG_reg[5]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X8Y42      Inst_vga_ctrl/MOUSE_X_POS_REG_reg[6]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         4.630       4.130      SLICE_X5Y42      Inst_vga_ctrl/MOUSE_X_POS_REG_reg[8]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_clk_wiz_0
+  To Clock:  clkfbout_clk_wiz_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_clk_wiz_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         10.000      7.845      BUFGCTRL_X0Y1    Inst_vga_ctrl/clk_wiz_0_inst/U0/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y0  Inst_vga_ctrl/clk_wiz_0_inst/U0/mmcm_adv_inst/CLKFBOUT
+
+
+
