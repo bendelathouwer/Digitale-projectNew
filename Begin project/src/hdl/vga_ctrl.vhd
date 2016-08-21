@@ -308,10 +308,10 @@ begin
     end process register_inputs;
      ---------------------------------------
      
-     -- Generate moving colorbar background
+     -- Generate moving colorbar animation 
      
      ---------------------------------------
-     
+   -- speed adjust   
      process(pxl_clk)
      begin
          if(rising_edge(pxl_clk)) then
@@ -374,7 +374,7 @@ begin
    
      
     
-    -- bg_green <= conv_std_logic_vector((-intvcnt - 8 - 8/2**20),8)(7 downto 4);
+   --bg_green <= conv_std_logic_vector((-intvcnt - 8 - 8/2**20),8)(7 downto 4); --fout
      --bg_red   <= conv_std_logic_vector((-intvcnt - inthcnt - cntDyn/2**20),8)(7 downto 4);
      --bg_green <= conv_std_logic_vector(            inthcnt - cntDyn/2**20, 8)(7 downto 4);
      --bg_blue  <= conv_std_logic_vector((           intvcnt - cntDyn/2**20),8)(7 downto 4);

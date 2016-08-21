@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Aug 20 18:46:51 2016
-# Process ID: 5348
+# Start of session at: Sun Aug 21 15:28:34 2016
+# Process ID: 11948
 # Current directory: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale Project zonder debouncer/Digitale Project zonder debouncer.runs/synth_1
 # Command line: vivado.exe -log GPIO_demo.vds -mode batch -messageDb vivado.pb -notrace -source GPIO_demo.tcl
 # Log file: C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Digitale Project zonder debouncer/Digitale Project zonder debouncer.runs/synth_1/GPIO_demo.vds
@@ -16,12 +16,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15996 
+INFO: Helper process launched with PID 10256 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 282.785 ; gain = 76.141
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 283.852 ; gain = 77.402
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'GPIO_demo' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:65]
-INFO: [Synth 8-3491] module 'vga_ctrl' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:38' bound to instance 'Inst_vga_ctrl' of component 'vga_ctrl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'GPIO_demo' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:24]
+INFO: [Synth 8-3491] module 'vga_ctrl' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:38' bound to instance 'Inst_vga_ctrl' of component 'vga_ctrl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:115]
 INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:51]
 INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0.vhd:74' bound to instance 'clk_wiz_0_inst' of component 'clk_wiz_0' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:198]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0.vhd:83]
@@ -97,10 +97,10 @@ INFO: [Synth 8-638] synthesizing module 'MouseDisplay' [C:/Users/Ecto1/Documents
 WARNING: [Synth 8-614] signal 'ypos' is read in the process but is not in the sensitivity list [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseDisplay.vhd:197]
 INFO: [Synth 8-256] done synthesizing module 'MouseDisplay' (5#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseDisplay.vhd:129]
 INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (6#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'GPIO_demo' (7#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_demo' (7#1) [C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd:24]
 WARNING: [Synth 8-3331] design vga_ctrl has unconnected port Button[4]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 321.891 ; gain = 115.246
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 321.953 ; gain = 115.504
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -110,7 +110,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 321.891 ; gain = 115.246
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 321.953 ; gain = 115.504
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -129,22 +129,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 614.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 614.598 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
 INFO: [Synth 8-5546] ROM "reset_bit_count" won't be mapped to RAM because it is too sparse
@@ -285,7 +285,7 @@ reset_enable_reporting_wait_ack |                           011100 |            
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'MouseCtl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -417,7 +417,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 614.461 ; gain = 407.816
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -427,9 +427,9 @@ INFO: [Synth 8-5545] ROM "Inst_vga_ctrl/Inst_MouseCtl/periodic_check_tick" won't
 INFO: [Synth 8-5546] ROM "Inst_vga_ctrl/Inst_MouseCtl/timeout" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design GPIO_demo has unconnected port BTN[4]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Parallel Reinference  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 614.598 ; gain = 408.148
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -532,9 +532,9 @@ WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/Inst_MouseCtl/y_max_re
 WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/Inst_MouseCtl/y_max_reg[10]) is unused and will be removed from module GPIO_demo.
 WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/Inst_MouseCtl/y_max_reg[9]) is unused and will be removed from module GPIO_demo.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 614.598 ; gain = 408.148
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -548,10 +548,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -569,16 +569,16 @@ WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/Inst_MouseCtl/y_pos_re
 WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/Inst_MouseCtl/ypos_reg[11]) is unused and will be removed from module GPIO_demo.
 WARNING: [Synth 8-3332] Sequential element (Inst_vga_ctrl/MOUSE_Y_POS_REG_reg[11]) is unused and will be removed from module GPIO_demo.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 614.598 ; gain = 408.148
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -596,7 +596,7 @@ INFO: [Synth 8-5365] Flop Inst_vga_ctrl/Inst_MouseCtl/Inst_Ps2Interface/ps2_clk_
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -609,7 +609,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -621,25 +621,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -685,11 +685,11 @@ Report Instance Areas:
 |7     |      U0                |clk_wiz_0_clk_wiz |     3|
 +------+------------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 614.461 ; gain = 115.246
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 614.461 ; gain = 407.816
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 614.598 ; gain = 115.504
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 614.598 ; gain = 408.148
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -702,6 +702,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 151 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 614.461 ; gain = 407.816
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 614.461 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 20 18:47:26 2016...
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 614.598 ; gain = 408.148
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 614.598 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 21 15:29:12 2016...

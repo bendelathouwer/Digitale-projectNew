@@ -1,45 +1,4 @@
-----------------------------------------------------------------------------
---	GPIO_Demo.vhd -- Basys3 GPIO/UART Demonstration Project
-----------------------------------------------------------------------------
--- Author:  Marshall Wingerson Adapted from Sam Bobrowicz
---          Copyright 2013 Digilent, Inc.
-----------------------------------------------------------------------------
---
-----------------------------------------------------------------------------
---	The GPIO/UART Demo project demonstrates a simple usage of the Basys3's 
---  GPIO and UART. The behavior is as follows:
---
---	      *The 16 User LEDs are tied to the 16 User Switches. While the center
---			 User button is pressed, the LEDs are instead tied to GND
---	      *The 7-Segment display counts from 0 to 9 on each of its 8
---        digits. This count is reset when the center button is pressed.
---        Also, single anodes of the 7-Segment display are blanked by
---	       holding BTNU, BTNL, BTND, or BTNR. Holding the center button 
---        blanks all the 7-Segment anodes.
---       *An introduction message is sent across the UART when the device
---        is finished being configured, and after the center User button
---        is pressed.
---       *A message is sent over UART whenever BTNU, BTNL, BTND, or BTNR is
---        pressed.
---       *Note that the center user button behaves as a user reset button
---        and is referred to as such in the code comments below
---       *A test pattern is displayed on the VGA port at 1280x1024 resolution.
---        If a mouse is attached to the USB-HID port, a cursor can be moved
---        around the pattern.
---        
---	All UART communication can be captured by attaching the UART port to a
--- computer running a Terminal program with 9600 Baud Rate, 8 data bits, no 
--- parity, and 1 stop bit.																
-----------------------------------------------------------------------------
---
-----------------------------------------------------------------------------
--- Revision History:
---  08/08/2011(SamB): Created using Xilinx Tools 13.2
---  08/27/2013(MarshallW): Modified for the Nexys4 with Xilinx ISE 14.4\
---  		--added RGB and microphone
---  7/22/2014(SamB): Modified for the Basys3 with Vivado 2014.2\
---  		--Removed RGB and microphone
-----------------------------------------------------------------------------
+------------------------------
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

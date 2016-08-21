@@ -4,8 +4,6 @@
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -19,9 +17,9 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 read_vhdl -library xil_defaultlib {
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/Ps2Interface.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0_clk_wiz.vhd}
-  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseDisplay.vhd}
-  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseCtl.vhd}
+  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/clk_wiz_0.vhd}
+  {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/MouseDisplay.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/vga_ctrl.vhd}
   {C:/Users/Ecto1/Documents/GitHub/Digitale projectNew/Begin project/src/hdl/GPIO_Demo.vhd}
 }
